@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="roomwise-storage" content="browser" />
+    <title>Roomwise · MyHub</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/pixel-theme.css" />
+  </head>
+  <body>
+    <aside>
+      <a class="brand" href="#"
+        >◈ <span>Roomwise<small>MYHUB WORKSPACE</small></span></a
+      >
+      <div class="property">🏡 TANCHAROEN PLACE<small>ระบบจัดการห้องพักรายเดือน</small></div>
+      <nav>
+        <button data-page="dashboard">◫ ภาพรวม</button
+        ><button data-page="rooms" class="active">▦ จัดการห้องพัก</button
+        ><button data-page="meters">◉ จดมิเตอร์</button
+        ><button data-page="bills">▤ บิลและการชำระเงิน</button
+        ><button data-page="reports">▥ รายรับ / รายจ่าย</button
+        ><button data-page="settings">⚙ ตั้งค่าหอพัก</button>
+      </nav>
+      <div class="aside-bottom">
+        ● ข้อมูลอยู่ในเบราว์เซอร์นี้<small>Roomwise · your space, simplified.</small>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <span>MyHub <b>/</b> Roomwise</span><span class="date" id="date"></span>
+      </header>
+      <div id="data-status" role="status" aria-live="polite">กำลังอ่านข้อมูลในเบราว์เซอร์…</div>
+      <section id="content"></section>
+    </main>
+    <dialog id="modal"></dialog>
+    <div id="toast" role="status"></div>
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
